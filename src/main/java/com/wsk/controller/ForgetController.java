@@ -93,7 +93,7 @@ public class ForgetController {
 
     //check the phone`s code
     private boolean checkCodePhone(String codePhone, HttpServletRequest request) {
-        String trueCodePhone1 = (String) request.getSession().getAttribute("codePhone");
-        return codePhone.equals(trueCodePhone1);
+        String trueCodePhone = (String) request.getSession().getAttribute("codePhone");
+        return codePhone.equals(trueCodePhone);
     }
 }
